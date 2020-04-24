@@ -33,3 +33,7 @@ button {
   background-color: #ddd;
   padding: 9px 0;
 }
+
+form {
+  margin: 0;
+}

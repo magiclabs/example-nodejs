@@ -10,6 +10,7 @@ const userRouter = require("./routes/user");
 
 const app = express();
 app.set("trust proxy", 1);
+app.set("view engine", "ejs");
 
 app.use(logger("dev"));
 app.use(express.json());

@@ -1,13 +1,12 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <title>Magic Apple Store 🍎</title>
+    <title><%= title %></title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/magic-sdk/dist/magic.js"></script>
     <script>
-      const magic = new Magic("YOUR_TEST_PUBLISHABLE_API_KEY");
+      const magic = new Magic("<%= MAGIC_PUBLISHABLE_KEY %>");
       const serverUrl = window.location.href;
       const render = async () => {
         /* Show login form if user is not logged in */

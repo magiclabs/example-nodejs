@@ -6,7 +6,7 @@ let users = new Datastore({ filename: "users.db", autoload: true });
 
 /* 1️⃣ Setup Magic Admin SDK */
 const { Magic } = require("@magic-sdk/admin");
-const magic = new Magic("YOUR_TEST_SECRET_API_KEY");
+const magic = new Magic(process.env.MAGIC_SECRET_KEY);
 
 /* 2️⃣ Implement Auth Strategy */
 const passport = require("passport");
