@@ -55,7 +55,13 @@ const login = async (user, done) => {
 };
 
 /* Attach middleware to login endpoint */
-router.post("/login", passport.authenticate("magic"));
+router.post("/login", passport.authenticate("magic"), (req, res) => {
+  if (req.user) {
+      res.status(200).end('User is logged in.');
+  } else {
+     return res.status(401).end('Could not log user in.');
+  }
+});
 
 /* 4️⃣ Implement Session Behavior */
 
