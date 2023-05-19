@@ -1,5 +1,5 @@
 {
-  "name": "magic-apple-store-nodejs",
+  "name": "magic-electron",
   "version": "1.0.0",
   "description": "",
   "main": "routes/user.js",
